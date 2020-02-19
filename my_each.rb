@@ -10,3 +10,4 @@ end
 
 my_each(list) {|i| print "Whats up #{i}?"}
 yield
+end
