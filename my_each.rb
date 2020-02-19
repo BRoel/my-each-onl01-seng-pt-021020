@@ -9,3 +9,4 @@ def my_each(array)
 end
 
 my_each(list) {|i| print "Whats up #{i}?"}
+yield
