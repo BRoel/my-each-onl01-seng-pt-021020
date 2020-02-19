@@ -8,6 +8,6 @@ def my_each(array)
   end
 end
 
-my_each(list) {|i| print "Whats up #{i}?"}
+def my_each(list) {|i| print "Whats up #{i}?"}
 yield
 end
