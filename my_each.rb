@@ -9,3 +9,15 @@ def my_each(array)
 end
 
 my_each(list) {|i| puts "Whats up my hommie #{i}"}
+
+def hello(array)
+  i = 0
+  collection = []
+  while i < array.length
+    collection << yield(array[i])
+    i += 1
+  end
+  collection
+end
+
+hello(list) {|i| "Hello #{i} how are you?"}
