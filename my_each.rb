@@ -1,4 +1,4 @@
-list = ["Peeve", "Chandler", "ef"]
+list = ["Peeve", "Chandler", "Elyse"]
 
 def my_each(array)
   i = 0
