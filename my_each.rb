@@ -1,14 +1,19 @@
-list = ["Peeve", "Chandler", "Elyse"]
+list = ["ab", "cd", "ef"]
 
 def my_each(array)
   i = 0
   while i < array.length
+# The "while" method will always return a value of => nil"
     yield(array[i])
     i = i + 1
   end
 end
 
-my_each(list) {|i| puts "Whats up my hommie #{i}"}
+my_each(list) {|i| puts "So I think #{i} is mean"}
+
+# Use the collection method 
+# To make the *return-value* the answer you want
+# instead of "=> nil"
 
 def hello(array)
   i = 0
@@ -20,4 +25,4 @@ def hello(array)
   collection
 end
 
-hello(list) {|i| "Hello #{i} how are you?"}
+hello(list) {|i| "Hello #{i} what's up?"}
